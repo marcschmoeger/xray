@@ -1,0 +1,12 @@
+language = "nodejs"
+run = "npm run build && npm start"
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+NEXT_PUBLIC_ALLOW_GUEST = "true"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
